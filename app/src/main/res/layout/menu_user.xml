@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:itemTextAppearance="@style/menu_text_style"
+    tools:context=".MainActivity"
+    tools:openDrawer="end">
+
+    <LinearLayout
+        android:id="@+id/id_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/navbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+
+                    android:background="@drawable/bgtitle"
+
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/logout"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/admin"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="52dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="User"
+                        android:textColor="@color/text_menu"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="@+id/imageView2"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="104dp"
+                        android:layout_height="51dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/logosb"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="142dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ready"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <ScrollView
+                    android:id="@+id/scrollGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/white_bg"
+                            android:orientation="vertical"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingBottom="20dp">
+
+
+                            <TextView
+
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/orange_title_bg"
+                                android:text="Finance"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/saleLinearLayout2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp"
+                                    android:visibility="gone">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/bg_circle_dark_orange">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/img_sale" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView22222"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="sale"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/saleLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/sale" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Sale"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/voidLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/imgvoid" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Void"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/settlementLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/settlment" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Settlement"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/qrLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/qr" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="QR"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/qrVerifyLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/qrverify" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="QR Verify"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/preAuthLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:visibility="invisible"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/preauth" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Pre Auth"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/forceReversalLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/forcereversal" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:gravity="center"
+                                        android:text="Force Reversal"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/preCompLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/precomp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Pre Comp"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp"></LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/white_bg"
+                            android:orientation="vertical"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingBottom="6dp">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/orange_title_bg"
+                                android:text="Management"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/reportLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/report" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Report"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/setupLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/setup" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Setup"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/settingsLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="invisible"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/settings" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Settings"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/adminLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/adminaccess" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:gravity="center"
+                                        android:text="Admin Access"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/clearReversalLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/clearreversal" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:gravity="center"
+                                        android:text="Clear Reversal"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/clearBatchLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/clearbatch" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="Clear Batch"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

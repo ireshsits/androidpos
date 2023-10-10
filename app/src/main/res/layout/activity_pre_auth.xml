@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--3.1.1.1 sale-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bgtitle"
+        android:elevation="4dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Pre Auth "
+            android:textColor="@color/text_menu"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/txtCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Rs "
+                android:textColor="@color/colorBlack"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/txtBase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="16"
+                android:text="0.00"
+                android:textColor="@color/colorBlack"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView style="@style/DropLineTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_num1"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/btn_num2"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/btn_num3"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/btn_num4"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/btn_num5"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/btn_num6"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/btn_num7"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="7" />
+
+
+            <TextView
+                android:id="@+id/btn_num8"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="8" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/divider_height"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/btn_num9"
+                style="@style/base_num_button"
+                android:layout_marginRight="@dimen/divider_height"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/btn_num0"
+                style="@style/base_num_button"
+                android:layout_marginRight="@dimen/divider_height"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/btn_num00"
+                style="@style/base_num_button"
+                android:layout_marginRight="@dimen/divider_height"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="00" />
+
+            <ImageView
+                android:id="@+id/btn_num_clear"
+                style="@style/base_num_button"
+                android:scaleType="centerInside"
+                android:scaleX="0.9"
+                android:src="@drawable/delete_num" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="22dp"
+
+            >
+
+            <TextView
+                android:id="@+id/btnCancelAmountScreen"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/radious_white_bg_orange"
+                android:backgroundTint="@color/white"
+                android:elevation="8dp"
+                android:padding="22dp"
+                android:text="Cancel"
+                android:textAlignment="center"
+
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/btnProceedAmountScreen"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/radious_white_bg_orange"
+                android:elevation="12dp"
+                android:padding="22dp"
+                android:text="Proceed"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
