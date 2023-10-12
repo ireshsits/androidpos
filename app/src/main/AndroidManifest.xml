@@ -13,6 +13,45 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ClearBatchActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClearReversalMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityTleKeyDownload"
+            android:exported="false" />
+        <activity
+            android:name=".SetMerchantPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PinKeyInjectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".PreCompletionActivity"
             android:exported="false" />
         <activity
@@ -49,7 +88,10 @@
             android:name=".QRErrorActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
