@@ -26,6 +26,7 @@
             android:layout_marginBottom="32dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Edit Table"
+            android:textFontWeight="800"
             android:textColor="@color/text_menu"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -101,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/TextInputLayout1"
-            android:background="@drawable/radious_white_bg"
+            android:background="@drawable/white_bg_red_border"
             android:padding="10dp"
             android:elevation="12dp"
             android:layout_margin="16dp"
@@ -114,11 +115,26 @@
                 android:fontFamily="@font/montserrat_semibold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Reversal Transaction Summery "
-                android:textColor="@color/text_menu"
+                android:text="Important Note!"
+                android:textColor="#D92D20"
                 android:textSize="15dp"
+                android:textFontWeight="800"
                 android:textAlignment="center"
                 android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="10dp"
+                android:text="Tap on clear button under selected merchant and host, please note once you perform the operation the transaction are permanently deleted from the batch "
+                android:layout_marginTop="13dp"
+                android:justificationMode="inter_word"
+                android:textColor="#ff0000"
+                android:textFontWeight="500"
+                android:textSize="14dp" />
 
         </RelativeLayout>
 

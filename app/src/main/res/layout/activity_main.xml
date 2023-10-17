@@ -65,7 +65,8 @@
                         android:fontFamily="@font/montserrat_semibold"
                         android:text="Admin"
                         android:textColor="@color/text_menu"
-                        android:textSize="10sp"
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
                         app:layout_constraintEnd_toEndOf="@+id/imageView2"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -132,7 +133,7 @@
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="5dp"
                             android:layout_marginBottom="5dp"
-
+                            android:background="@drawable/white_bg"
                             android:orientation="vertical"
                             android:paddingLeft="0dp"
                             android:paddingRight="0dp"
@@ -156,7 +157,7 @@
 
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="6dp"
+                                android:layout_marginTop="16dp"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -231,7 +232,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Sale"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500"/>
 
                                 </LinearLayout>
 
@@ -266,7 +268,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Void"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -301,7 +304,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Settlement"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500"/>
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -345,7 +349,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="QR"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -380,7 +385,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="QR Verify"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -415,7 +421,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Pre Auth"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -459,7 +466,8 @@
                                         android:gravity="center"
                                         android:text="Force Reversal"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -493,7 +501,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Pre Comp"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -538,6 +547,7 @@
 
 
                             <LinearLayout
+                                android:layout_marginTop="12dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -573,7 +583,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Report"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -608,7 +619,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Setup"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -643,7 +655,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Settings"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -687,7 +700,8 @@
                                         android:gravity="center"
                                         android:text="Admin Access"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -710,7 +724,6 @@
                                         <ImageView
                                             android:layout_width="70dp"
                                             android:layout_height="70dp"
-                                            android:layout_centerInParent="true"
                                             app:srcCompat="@drawable/clearreversal" />
                                     </RelativeLayout>
 
@@ -723,7 +736,8 @@
                                         android:gravity="center"
                                         android:text="Clear Reversal"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -758,7 +772,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Clear Batch"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
                             </LinearLayout>

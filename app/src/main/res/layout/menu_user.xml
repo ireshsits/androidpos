@@ -63,9 +63,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="52dp"
                         android:fontFamily="@font/montserrat_semibold"
-                        android:text="User"
+                        android:text="Admin"
                         android:textColor="@color/text_menu"
-                        android:textSize="10sp"
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
                         app:layout_constraintEnd_toEndOf="@+id/imageView2"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -156,7 +157,7 @@
 
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="6dp"
+                                android:layout_marginTop="16dp"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -231,7 +232,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Sale"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500"/>
 
                                 </LinearLayout>
 
@@ -266,7 +268,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Void"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -301,7 +304,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Settlement"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500"/>
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -345,7 +349,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="QR"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -380,7 +385,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="QR Verify"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -416,7 +422,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Pre Auth"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -425,6 +432,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="6dp"
+                                android:visibility="gone"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -438,6 +446,7 @@
                                     android:elevation="4dp"
                                     android:gravity="center"
                                     android:orientation="vertical"
+
                                     android:padding="5dp">
 
                                     <RelativeLayout
@@ -460,7 +469,8 @@
                                         android:gravity="center"
                                         android:text="Force Reversal"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -494,7 +504,8 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Pre Comp"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
@@ -539,6 +550,7 @@
 
 
                             <LinearLayout
+                                android:layout_marginTop="12dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -574,88 +586,13 @@
                                         android:fontFamily="@font/montserrat_semibold"
                                         android:text="Report"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
 
-                                <LinearLayout
-                                    android:id="@+id/setupLinearLayout"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:layout_margin="8dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/radious_white_bg"
-                                    android:elevation="4dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical"
-                                    android:padding="5dp">
 
-                                    <RelativeLayout
-                                        android:layout_width="70dp"
-                                        android:layout_height="70dp">
 
-                                        <ImageView
-                                            android:layout_width="70dp"
-                                            android:layout_height="70dp"
-                                            android:layout_centerInParent="true"
-                                            app:srcCompat="@drawable/setup" />
-                                    </RelativeLayout>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="5dp"
-                                        android:fontFamily="@font/montserrat_semibold"
-                                        android:text="Setup"
-                                        android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:id="@+id/settingsLinearLayout"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:layout_margin="8dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/radious_white_bg"
-                                    android:elevation="4dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical"
-                                    android:visibility="invisible"
-                                    android:padding="5dp">
-
-                                    <RelativeLayout
-                                        android:layout_width="70dp"
-                                        android:layout_height="70dp">
-
-                                        <ImageView
-                                            android:layout_width="70dp"
-                                            android:layout_height="70dp"
-                                            android:layout_centerInParent="true"
-                                            app:srcCompat="@drawable/settings" />
-                                    </RelativeLayout>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="5dp"
-                                        android:fontFamily="@font/montserrat_semibold"
-                                        android:text="Settings"
-                                        android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
-
-                                </LinearLayout>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:visibility="gone"
-                                android:orientation="horizontal">
 
                                 <LinearLayout
                                     android:id="@+id/adminLinearLayout"
@@ -690,11 +627,14 @@
                                         android:gravity="center"
                                         android:text="Admin Access"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
                                 </LinearLayout>
 
+
                                 <LinearLayout
-                                    android:id="@+id/clearReversalLinearLayout"
+                                    android:visibility="invisible"
+                                    android:id="@+id/setupLinearLayout"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
@@ -714,44 +654,7 @@
                                             android:layout_width="70dp"
                                             android:layout_height="70dp"
                                             android:layout_centerInParent="true"
-                                            app:srcCompat="@drawable/clearreversal" />
-                                    </RelativeLayout>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="5dp"
-                                        android:fontFamily="@font/montserrat_semibold"
-                                        android:gravity="center"
-                                        android:text="Clear Reversal"
-                                        android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:id="@+id/clearBatchLinearLayout"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:layout_margin="8dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/radious_white_bg"
-                                    android:elevation="4dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical"
-                                    android:padding="5dp">
-
-                                    <RelativeLayout
-                                        android:layout_width="70dp"
-                                        android:layout_height="70dp">
-
-                                        <ImageView
-                                            android:layout_width="70dp"
-                                            android:layout_height="70dp"
-                                            android:layout_centerInParent="true"
-                                            app:srcCompat="@drawable/clearbatch" />
+                                            app:srcCompat="@drawable/setup" />
                                     </RelativeLayout>
 
                                     <TextView
@@ -759,12 +662,16 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="5dp"
                                         android:fontFamily="@font/montserrat_semibold"
-                                        android:text="Clear Batch"
+                                        android:text="Setup"
                                         android:textColor="@color/text_menu"
-                                        android:textSize="10sp" />
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
 
                                 </LinearLayout>
+
                             </LinearLayout>
+
+
                         </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
