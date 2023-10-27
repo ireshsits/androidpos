@@ -115,8 +115,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
         LinearLayout settingsLinearLayout = findViewById(R.id.settingsLinearLayout);
         settingsLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override

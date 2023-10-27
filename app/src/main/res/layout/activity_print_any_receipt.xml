@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--3.1.1.1 sale 2-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ClearBatchActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bgtitle"
+        android:elevation="4dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Print Any Receipt"
+            android:textFontWeight="800"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textInvoiceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textFontWeight="500"
+            android:text="Invoice Number"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="15dp" />
+
+
+        <EditText
+            android:id="@+id/selecthost"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radious_white_bg"
+            android:elevation="6dp"
+            android:padding="8dp"
+            android:hint="Enter Invoice Number Here"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textInvoiceNumber"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp">
+
+        </EditText>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textFontWeight="500"
+            android:text="Host"
+            app:layout_constraintTop_toBottomOf="@+id/selecthost"
+            android:layout_marginTop="25dp" />
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/selectHost"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radious_white_bg"
+            android:elevation="6dp"
+            android:hint="Select Host "
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textHost"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp">
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTxtHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:foreground="#0C000000"
+                android:inputType="none"
+
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/Merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textFontWeight="500"
+            android:text="Merchant"
+            app:layout_constraintTop_toBottomOf="@+id/selectHost"
+            android:layout_marginTop="25dp" />
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/selectMerchant"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radious_white_bg"
+            android:elevation="6dp"
+            android:hint="Select Merchant "
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/Merchant"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp">
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTxtMerchant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:foreground="#0C000000"
+                android:inputType="none"
+
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:id="@+id/btnCancelAmountScreen"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/radious_white_bg_orange"
+                android:backgroundTint="@color/white"
+                android:elevation="6dp"
+                android:padding="15dp"
+                android:text="Cancel"
+                android:textSize="18dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="900"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="22dp"/>
+            <TextView
+                android:id="@+id/btnprint"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/radious_white_bg_orange"
+                android:elevation="6dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="900"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Print"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="22dp"  />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+

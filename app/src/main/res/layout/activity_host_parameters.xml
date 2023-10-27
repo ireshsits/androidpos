@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".VoidActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bgtitle"
+        android:elevation="4dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Host Parameters"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textFontWeight="800"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/radious_white_bg"
+            android:elevation="6dp"
+            android:hint="Select a Merchant"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:foreground="#0C000000"
+                android:inputType="none"
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radious_white_bg"
+            android:padding="20dp"
+            android:elevation="12dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <TextView
+                android:id="@+id/title"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters"
+                android:textAlignment="center"
+                android:textColor="@color/text_menu"
+                android:textSize="18dp"
+                android:textFontWeight="800"
+                android:layout_marginBottom="28dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtCardNumber"
+                android:layout_below="@+id/title"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card NO        :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textFontWeight="500"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCardNumber2"
+                android:layout_below="@+id/title"
+                android:textFontWeight="500"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_toEndOf="@+id/txtCardNumber"
+                android:text="12312312312"
+                android:textColor="@color/text_menu"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tidAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCardNumber"
+                android:layout_marginTop="10dp"
+                android:text="Terminal ID  : "
+                android:textFontWeight="500"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tidvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCardNumber"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/tidAmount"
+                android:text="RS 123123"
+                android:textFontWeight="500"
+                android:textColor="@color/text_menu"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tidAmount"
+                android:layout_marginTop="10dp"
+                android:text="Merchant ID :"
+                android:textFontWeight="500"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/midvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tidvalue"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:textFontWeight="500"
+                android:layout_toEndOf="@+id/mid"
+                android:text="RS 123123"
+                android:textColor="@color/text_menu"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mid"
+                android:layout_marginTop="10dp"
+                android:textFontWeight="500"
+                android:text="IP                   :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ipvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textFontWeight="500"
+                android:layout_below="@+id/midvalue"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/mid"
+                android:text="RS 123123"
+                android:textColor="@color/text_menu"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/port"
+                android:layout_width="wrap_content"
+                android:textFontWeight="500"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ip"
+                android:layout_marginTop="10dp"
+                android:text="Port               :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/portvalue"
+                android:textFontWeight="500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ipvalue"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/port"
+                android:text="RS 123123"
+                android:textColor="@color/text_menu"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/NII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/port"
+                android:layout_marginTop="10dp"
+                android:text="NII                  :"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NIIvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/portvalue"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:textFontWeight="500"
+                android:layout_toEndOf="@+id/port"
+                android:text="RS 123123"
+                android:textColor="@color/text_menu"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/secureNII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NII"
+                android:layout_marginTop="10dp"
+                android:text="Secure NII     :"
+                android:textFontWeight="500"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/secureNIIvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NIIvalue"
+                android:textFontWeight="500"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/secureNII"
+                android:text="RS 123123"
+                android:textColor="@color/text_menu"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:id="@+id/btnCancelAmountScreen"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/radious_white_bg_orange"
+                android:backgroundTint="@color/white"
+                android:elevation="6dp"
+                android:padding="15dp"
+                android:text="Cancel"
+                android:textSize="18dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="900"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="22dp"/>
+            <TextView
+                android:id="@+id/btnprint"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/radious_white_bg_orange"
+                android:elevation="6dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="900"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Print"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="22dp"  />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+

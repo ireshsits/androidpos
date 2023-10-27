@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Default state (unchecked) -->
+    <item android:state_checked="false" android:drawable="@android:color/transparent" android:color="@color/black" />
+
+    <!-- Checked state -->
+    <item android:state_checked="true" android:color="#FF0000">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF0000"/> <!-- Change this color to your desired checked color -->
+            <size android:width="24dp" android:height="24dp" />
+        </shape>
+    </item>
+</selector>

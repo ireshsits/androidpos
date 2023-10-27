@@ -13,23 +13,27 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".CManualEntryActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".PrintLastSettkementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrintAnyReceiptActivity"
+            android:exported="false">
         </activity>
         <activity
+            android:name=".QRTransactionReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HostParametersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CManualEntryActivity"
+            android:exported="false" />
+        <activity
             android:name=".CmvActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".SettlemEnterPasswordentActivity"
             android:exported="false" />
