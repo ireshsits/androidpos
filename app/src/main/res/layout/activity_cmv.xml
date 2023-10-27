@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingStart="20dp"
+            android:text="Enter Last 4 Digits"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Setpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/radious_white_bg"
+            android:elevation="4dp"
+            android:hint="Last 4 Digits"
+            android:padding="15dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+
+            android:paddingBottom="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Setpassword"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnProceedAmountScreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/radious_white_bg_orange_low_ra"
+                android:elevation="12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Confirm"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textFontWeight="800" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancelAmountScreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radious_white_bg"
+                android:backgroundTint="@color/white"
+                android:elevation="12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Cancel"
+
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+
+                android:textFontWeight="800" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/toponly_rounded_shape"
+        android:orientation="vertical"
+        android:elevation="12dp"
+
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num1"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:textFontWeight="800"
+                android:text="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num2"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:textFontWeight="800"
+                android:text="2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num3"
+                style="@style/base_num_button"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:textFontWeight="800"
+                android:text="3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num4"
+                style="@style/base_num_button"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num5"
+                style="@style/base_num_button"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num6"
+                style="@style/base_num_button"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num7"
+                style="@style/base_num_button"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="7" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num8"
+                style="@style/base_num_button"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="8" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/divider_height"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num9"
+                style="@style/base_num_button"
+                android:layout_marginRight="@dimen/divider_height"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num0"
+                style="@style/base_num_button"
+                android:layout_marginRight="@dimen/divider_height"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_num00"
+                style="@style/base_num_button"
+                android:textFontWeight="800"
+                android:layout_marginRight="@dimen/divider_height"
+                android:fontFamily="@font/montserrat_semibold"
+                android:scaleX="0.9"
+                android:text="00" />
+
+            <ImageView
+                android:id="@+id/btn_num_clear"
+                style="@style/base_num_button"
+                android:scaleType="centerInside"
+                android:scaleX="0.9"
+                android:src="@drawable/delete_num" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

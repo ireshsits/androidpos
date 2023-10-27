@@ -16,6 +16,7 @@
         android:id="@+id/navbar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:textFontWeight="800"
         android:background="@drawable/bgtitle"
         android:elevation="4dp">
 

@@ -150,6 +150,16 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        LinearLayout clearBatchLinearLayout = findViewById(R.id.clearBatchLinearLayout);
+        clearBatchLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ClearBatchActivity.class); // Replace NewActivity with the name of your new activity class
+                startActivity(intent);
+            }
+        });
+
+
 
         showCustomAlertDialog();
 

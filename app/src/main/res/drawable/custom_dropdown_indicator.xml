@@ -6,7 +6,7 @@
     <item android:right="12dp" android:left="12dp">
         <bitmap
             android:src="@drawable/ready"
-            android:tint="@color/bg"
+            android:tint="@color/primaryTheme"
             android:gravity="center"
             android:layout_width="24dp"
             android:layout_height="24dp" />

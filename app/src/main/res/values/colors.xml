@@ -16,7 +16,7 @@
     <color name="titlebg">#FF540A</color>
     <color name="bg_appt">#F1510B</color>
     <color name="translucent">#50000011</color>
-    <color name="text_menu">#646565</color>
+    <color name="text_menu">#A9B2B2 </color>
     <color name="colorPrimaryDark">#ed6506</color>
 
     <color name="input_num">#464646</color>
@@ -26,5 +26,6 @@
 
 
     <color name="allinpay_text_green">#55BAFF</color>
+    <color name="primaryTheme">#FF540A</color>
 
 </resources>
