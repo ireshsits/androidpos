@@ -39,14 +39,14 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/host_textInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@drawable/radious_white_bg"
             android:elevation="6dp"
-            android:hint="Select a Merchant"
+            android:hint="Select a Host "
             app:hintTextColor="@color/black"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="16dp">
@@ -61,6 +61,28 @@
                 android:padding="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/merchant_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/radious_white_bg"
+            android:elevation="6dp"
+            android:hint="Select a Merchant"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/host_textInputLayout"
+            tools:layout_editor_absoluteX="16dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/merchant_auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:foreground="#0C000000"
+                android:inputType="none"
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -75,7 +97,7 @@
             android:layout_margin="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@+id/merchant_textInputLayout">
 
             <TextView
                 android:id="@+id/title"
@@ -100,20 +122,20 @@
                 android:text="Card NO        :"
                 android:textColor="@color/black"
                 android:textSize="18dp"
-                android:textFontWeight="500"
+                android:textFontWeight="800"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtCardNumber2"
-                android:layout_below="@+id/title"
-                android:textFontWeight="500"
-                android:fontFamily="@font/montserrat_semibold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
                 android:layout_marginStart="21dp"
                 android:layout_toEndOf="@+id/txtCardNumber"
+                android:fontFamily="@font/montserrat_semibold"
                 android:text="12312312312"
-                android:textColor="@color/text_menu"
+                android:textColor="#5C5C5C"
+                android:textFontWeight="200"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -124,7 +146,7 @@
                 android:layout_below="@+id/txtCardNumber"
                 android:layout_marginTop="10dp"
                 android:text="Terminal ID  : "
-                android:textFontWeight="500"
+                android:textFontWeight="800"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
@@ -139,8 +161,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/tidAmount"
                 android:text="RS 123123"
-                android:textFontWeight="500"
-                android:textColor="@color/text_menu"
+                android:textFontWeight="200"
+                android:textColor="#5C5C5C"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -152,7 +174,7 @@
                 android:layout_below="@+id/tidAmount"
                 android:layout_marginTop="10dp"
                 android:text="Merchant ID :"
-                android:textFontWeight="500"
+                android:textFontWeight="800"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
@@ -165,10 +187,10 @@
                 android:layout_below="@+id/tidvalue"
                 android:layout_marginStart="21dp"
                 android:layout_marginTop="10dp"
-                android:textFontWeight="500"
+                android:textFontWeight="200"
                 android:layout_toEndOf="@+id/mid"
                 android:text="RS 123123"
-                android:textColor="@color/text_menu"
+                android:textColor="#5C5C5C"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -180,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/mid"
                 android:layout_marginTop="10dp"
-                android:textFontWeight="500"
+                android:textFontWeight="800"
                 android:text="IP                   :"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_semibold"
@@ -191,13 +213,13 @@
                 android:id="@+id/ipvalue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textFontWeight="500"
+                android:textFontWeight="200"
                 android:layout_below="@+id/midvalue"
                 android:layout_marginStart="21dp"
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/mid"
                 android:text="RS 123123"
-                android:textColor="@color/text_menu"
+                android:textColor="#5C5C5C"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -207,7 +229,7 @@
             <TextView
                 android:id="@+id/port"
                 android:layout_width="wrap_content"
-                android:textFontWeight="500"
+                android:textFontWeight="800"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ip"
                 android:layout_marginTop="10dp"
@@ -219,7 +241,7 @@
 
             <TextView
                 android:id="@+id/portvalue"
-                android:textFontWeight="500"
+                android:textFontWeight="200"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ipvalue"
@@ -227,7 +249,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/port"
                 android:text="RS 123123"
-                android:textColor="@color/text_menu"
+                android:textColor="#5C5C5C"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -242,7 +264,7 @@
                 android:layout_marginTop="10dp"
                 android:text="NII                  :"
                 android:textColor="@color/black"
-                android:textFontWeight="500"
+                android:textFontWeight="800"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -254,10 +276,10 @@
                 android:layout_below="@+id/portvalue"
                 android:layout_marginStart="21dp"
                 android:layout_marginTop="10dp"
-                android:textFontWeight="500"
+                android:textFontWeight="200"
                 android:layout_toEndOf="@+id/port"
                 android:text="RS 123123"
-                android:textColor="@color/text_menu"
+                android:textColor="#5C5C5C"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -271,7 +293,7 @@
                 android:layout_below="@+id/NII"
                 android:layout_marginTop="10dp"
                 android:text="Secure NII     :"
-                android:textFontWeight="500"
+                android:textFontWeight="800"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
@@ -282,12 +304,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/NIIvalue"
-                android:textFontWeight="500"
+                android:textFontWeight="200"
                 android:layout_marginStart="21dp"
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/secureNII"
                 android:text="RS 123123"
-                android:textColor="@color/text_menu"
+                android:textColor="#5C5C5C"
                 android:fontFamily="@font/montserrat_semibold"
                 android:textSize="18dp"
                 android:textStyle="bold" />

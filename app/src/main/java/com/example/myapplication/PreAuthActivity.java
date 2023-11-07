@@ -19,7 +19,7 @@ public class PreAuthActivity extends AppCompatActivity {
         qrVerifyLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PreAuthActivity.this, SettlementActivity.class); // Replace NewActivity with the name of your new activity class
+                Intent intent = new Intent(PreAuthActivity.this, select_merchant_Activity.class); // Replace NewActivity with the name of your new activity class
                 startActivity(intent);
             }
         });

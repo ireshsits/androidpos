@@ -354,41 +354,8 @@
 
                                 </LinearLayout>
 
-                                <LinearLayout
-                                    android:id="@+id/qrVerifyLinearLayout"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:layout_margin="8dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/radious_white_bg"
-                                    android:elevation="4dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical"
-                                    android:padding="5dp">
 
-                                    <RelativeLayout
-                                        android:layout_width="70dp"
-                                        android:layout_height="70dp">
 
-                                        <ImageView
-                                            android:layout_width="70dp"
-                                            android:layout_height="70dp"
-                                            android:layout_centerInParent="true"
-                                            app:srcCompat="@drawable/qrverify" />
-                                    </RelativeLayout>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="5dp"
-                                        android:fontFamily="@font/montserrat_semibold"
-                                        android:text="QR Verify"
-                                        android:textColor="@color/text_menu"
-                                        android:textSize="15sp"
-                                        android:textFontWeight="500" />
-
-                                </LinearLayout>
 
                                 <LinearLayout
                                     android:id="@+id/preAuthLinearLayout"
@@ -425,14 +392,6 @@
                                         android:textFontWeight="500" />
 
                                 </LinearLayout>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="6dp"
-                                android:orientation="horizontal">
-
                                 <LinearLayout
                                     android:id="@+id/forceReversalLinearLayout"
                                     android:layout_width="0dp"
@@ -469,6 +428,15 @@
                                         android:textSize="15sp"
                                         android:textFontWeight="500" />
                                 </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:orientation="horizontal">
+
+
 
                                 <LinearLayout
                                     android:id="@+id/preCompLinearLayout"
@@ -506,6 +474,7 @@
 
                                 </LinearLayout>
 
+
                                 <LinearLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
@@ -516,6 +485,17 @@
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:padding="5dp"></LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp"></LinearLayout>
+
                             </LinearLayout>
                         </LinearLayout>
 
@@ -589,6 +569,42 @@
                                 </LinearLayout>
 
                                 <LinearLayout
+                                    android:id="@+id/qrreportLinearLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radious_white_bg"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp">
+
+                                        <ImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_centerInParent="true"
+                                            app:srcCompat="@drawable/qrreport" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:text="QR Report"
+                                        android:textColor="@color/text_menu"
+                                        android:textSize="15sp"
+                                        android:textFontWeight="500" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
                                     android:id="@+id/setupLinearLayout"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
@@ -623,6 +639,15 @@
                                         android:textFontWeight="500" />
 
                                 </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
 
                                 <LinearLayout
                                     android:id="@+id/settingsLinearLayout"
@@ -659,13 +684,6 @@
                                         android:textFontWeight="500" />
 
                                 </LinearLayout>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:orientation="horizontal">
 
                                 <LinearLayout
                                     android:id="@+id/adminLinearLayout"
@@ -741,6 +759,19 @@
 
                                 </LinearLayout>
 
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+
+
                                 <LinearLayout
                                     android:id="@+id/clearBatchLinearLayout"
                                     android:layout_width="0dp"
@@ -776,7 +807,35 @@
                                         android:textFontWeight="500" />
 
                                 </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp"></LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:elevation="4dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp"></LinearLayout>
                             </LinearLayout>
+
+
+
+
+
+
+
+
                         </LinearLayout>
                     </LinearLayout>
                 </ScrollView>

@@ -40,14 +40,6 @@ public class ReportsActivity extends AppCompatActivity {
         });
 
 
-        LinearLayout qrTransationrLinearLayout = findViewById(R.id.qrTransationrLinearLayout);
-        qrTransationrLinearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ReportsActivity.this, QRTransactionReportActivity.class); // Replace NewActivity with the name of your new activity class
-                startActivity(intent);
-            }
-        });
 
 
 
@@ -68,10 +60,22 @@ public class ReportsActivity extends AppCompatActivity {
         LastReceiptLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(ReportsActivity.this, LastSettlementActivity.class); // Replace NewActivity with the name of your new activity class
+                startActivity(intent);
+            }
+        });
+
+
+        LinearLayout LastSettlementLinearLayout = findViewById(R.id.LastSettlementLinearLayout);
+        LastSettlementLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent = new Intent(ReportsActivity.this, PrintLastSettkementsActivity.class); // Replace NewActivity with the name of your new activity class
                 startActivity(intent);
             }
         });
+
+
 
 
 

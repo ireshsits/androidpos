@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Void"
+            android:text="Settlement"
             android:textColor="@color/text_menu"
             android:textSize="20sp"
             android:textFontWeight="800"
@@ -43,16 +43,14 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/host_textInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@drawable/radious_white_bg"
-
             android:elevation="6dp"
-
-            android:hint="Select a Merchant"
+            android:hint="Select a Host"
             app:hintTextColor="@color/black"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="16dp">
@@ -70,6 +68,31 @@
 
 
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/merchant_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/radious_white_bg"
+
+            android:elevation="6dp"
+            android:hint="Select a Merchant"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/host_textInputLayout"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/merchant_auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:foreground="#0C000000"
+                android:inputType="none"
+
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -80,7 +103,7 @@
             android:layout_margin="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@+id/merchant_textInputLayout">
 
 
             <TextView

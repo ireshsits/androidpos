@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -9,7 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,8 +57,48 @@ public class MainActivity extends AppCompatActivity {
         settlementLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SettlementActivity.class); // Replace NewActivity with the name of your new activity class
-                startActivity(intent);
+
+
+                    View customView = LayoutInflater.from(MainActivity.this).inflate(R.layout.settlement_dialog, null);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                    builder.setView(customView);
+
+                    ImageView cancel = customView.findViewById(R.id.btnCancelTop);
+
+
+                    final AlertDialog dialog = builder.create();
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.show();
+
+                    cancel.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
+                TextView btnQR = customView.findViewById(R.id.btnQR);
+                TextView btnSale = customView.findViewById(R.id.btnSale);
+
+                btnQR.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, QrSettlementActivity.class); // Replace NewActivity with the name of your new activity class
+                        startActivity(intent);
+                    }
+                });
+
+                btnSale.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, SettlementActivity.class); // Replace NewActivity with the name of your new activity class
+                        startActivity(intent);
+                    }
+                });
+
+
+
+//                Intent intent = new Intent(MainActivity.this, SettlementActivity.class); // Replace NewActivity with the name of your new activity class
+//                startActivity(intent);
             }
         });
 
@@ -73,14 +114,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        LinearLayout qrVerifyLinearLayout = findViewById(R.id.qrVerifyLinearLayout);
-        qrVerifyLinearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, QrVerifyActivity.class); // Replace NewActivity with the name of your new activity class
-                startActivity(intent);
-            }
-        });
+//        LinearLayout qrVerifyLinearLayout = findViewById(R.id.qrVerifyLinearLayout);
+//        qrVerifyLinearLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, QrVerifyActivity.class); // Replace NewActivity with the name of your new activity class
+//                startActivity(intent);
+//            }
+//        });
 
 
 
@@ -158,46 +199,34 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-        showCustomAlertDialog();
-
-
+//
+//        AlertDialogUtils.showCustomAlertDialog(this, "New Text for dtitle2");
 
 
 
 
-
-
-
-
-
-
-
-
-
-    }
-
-    private void showCustomAlertDialog() {
-
-
-
-        View customView =LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_dialog, null);
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setView(customView);
-
-        ImageView cancel = customView.findViewById(R.id.btnCancelTop);
-
-
-        final AlertDialog dialog = builder.create();
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.show();
-
-        cancel.setOnClickListener(new View.OnClickListener() {
+        LinearLayout forceReversalLinearLayou = findViewById(R.id.forceReversalLinearLayout);
+        clearBatchLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.dismiss();
+                Intent intent = new Intent(MainActivity.this, ForceReversalActivity.class); // Replace NewActivity with the name of your new activity class
+                startActivity(intent);
             }
         });
 
+
+
+        LinearLayout qrreportLinearLayout = findViewById(R.id.qrreportLinearLayout);
+        qrreportLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QrReportActivity.class); // Replace NewActivity with the name of your new activity class
+                startActivity(intent);
+            }
+        });
+
+
     }
+
+
 }

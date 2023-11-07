@@ -34,7 +34,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="18dp"
             android:fontFamily="@font/montserrat_extrabold_italic"
-            android:text="Confirm Your Action"
+            android:text="Settlement"
             android:textAlignment="textStart"
             android:textSize="22dp"
             android:textFontWeight="800"
@@ -47,10 +47,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginTop="55dp"
             android:textFontWeight="500"
             android:fontFamily="sans-serif-condensed-light"
-            android:text="Do you want to clear all keys?"
+            android:text="Select batch to settle"
             android:textAlignment="textStart"
             android:textColor="@color/text_menu"
             android:textSize="18dp"
@@ -70,7 +70,7 @@
             app:layout_constraintTop_toBottomOf="@+id/dtitle2">
 
             <TextView
-                android:id="@+id/btnConfirm"
+                android:id="@+id/btnQR"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:layout_marginLeft="20dp"
@@ -78,27 +78,31 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/radious_white_bg_orange_low_ra"
                 android:elevation="12dp"
-                android:paddingTop="10dp"
-                android:text="Yes"
-                android:textFontWeight="800"
-                android:textAlignment="center"
+                android:paddingTop="6dp"
+                android:text="QR"
+                                android:textAlignment="center"
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900"
                 android:textColor="@color/white" />
 
             <TextView
-                android:id="@+id/btnCancel"
+                android:id="@+id/btnSale"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="22dp"
                 android:background="@drawable/radious_white_bg_orange_low_ra"
-                android:backgroundTint="@color/white"
+
                 android:elevation="8dp"
-                android:textFontWeight="800"
-                android:paddingTop="10dp"
-                android:text="Cancel"
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900"
+                android:paddingTop="6dp"
+                android:text="Sale"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
 
         </LinearLayout>

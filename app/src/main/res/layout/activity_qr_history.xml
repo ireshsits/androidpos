@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".QrHistoryActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bgtitle"
+        android:elevation="4dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="QR History"
+            android:textColor="@color/text_menu"
+            android:textFontWeight="800"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radious_white_bg"
+                    android:elevation="12dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="ID                  : "
+                        android:textColor="@color/black"
+                        android:textFontWeight="800"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtIdvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_toEndOf="@+id/txtId"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="12312312312"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtpanLow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtId"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="PAN Low      : "
+                        android:textColor="@color/black"
+                        android:textFontWeight="800"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTranAmountvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtId"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/txtpanLow"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="RS 123123"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtpanHigh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtpanLow"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="PAN High     : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textFontWeight="800"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ttxtpanHighvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTranAmountvalue"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/txtpanLow"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="RS 123123"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtcardabbre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtpanHigh"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Card Abbre  : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textFontWeight="800"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtcardabbrehvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ttxtpanHighvalue"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/txtpanLow"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="RS 123123"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtcardabbrehvalue"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/radious_white_bg_orange_low_ra"
+                        android:elevation="12dp"
+                        android:textSize="19dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingTop="20dp"
+                        android:text="Save"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textFontWeight="800" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radious_white_bg"
+                    android:elevation="12dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtId2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="ID                  : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textFontWeight="800"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtIdvalue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_toEndOf="@+id/txtId2"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="12312312312"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtpanLow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtId2"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="PAN Low      : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textFontWeight="800"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTranAmountvalue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtId2"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/txtpanLow2"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="RS 123123"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtpanHigh2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtpanLow2"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="PAN High     : "
+                        android:textColor="@color/black"
+                        android:textFontWeight="800"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ttxtpanHighvalue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTranAmountvalue2"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/txtpanLow2"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="RS 123123"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtcardabbre2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtpanHigh2"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Card Abbre  : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textFontWeight="800"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtcardabbrehvalue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ttxtpanHighvalue2"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/txtpanLow2"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="RS 123123"
+                        android:textColor="@color/text_menu"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/btnSave2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtcardabbrehvalue2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="19dp"
+                        android:background="@drawable/radious_white_bg_orange_low_ra"
+                        android:elevation="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingTop="20dp"
+                        android:text="Save"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textFontWeight="800" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/btnCancelAmountScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/radious_white_bg_orange_low_ra"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                android:paddingTop="20dp"
+                android:text="Exit"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat"
+                android:textSize="19dp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+

@@ -34,7 +34,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="18dp"
             android:fontFamily="@font/montserrat_extrabold_italic"
-            android:text="Confirm Your Action"
+            android:text="Pre Comp Amount"
             android:textAlignment="textStart"
             android:textSize="22dp"
             android:textFontWeight="800"
@@ -47,16 +47,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginTop="55dp"
             android:textFontWeight="500"
             android:fontFamily="sans-serif-condensed-light"
-            android:text="Do you want to clear all keys?"
+            android:text="Please input an amount to pre comp"
             android:textAlignment="textStart"
             android:textColor="@color/text_menu"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="15dp"
+            android:background="@drawable/radious_white_bg"
+            android:elevation="4dp"
+            android:hint="Enter Amount Here"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dtitle2" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,7 +83,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dtitle2">
+            app:layout_constraintTop_toBottomOf="@+id/amount">
 
             <TextView
                 android:id="@+id/btnConfirm"
@@ -78,10 +94,12 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/radious_white_bg_orange_low_ra"
                 android:elevation="12dp"
-                android:paddingTop="10dp"
-                android:text="Yes"
-                android:textFontWeight="800"
+                android:paddingTop="6dp"
+                android:text="Confirm"
                 android:textAlignment="center"
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900"
                 android:textColor="@color/white" />
 
             <TextView
@@ -91,11 +109,12 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="22dp"
-                android:background="@drawable/radious_white_bg_orange_low_ra"
-                android:backgroundTint="@color/white"
+                android:background="@drawable/radious_white_bg"
                 android:elevation="8dp"
-                android:textFontWeight="800"
-                android:paddingTop="10dp"
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900"
+                android:paddingTop="6dp"
                 android:text="Cancel"
                 android:textAlignment="center"
                 android:textColor="@color/black" />

@@ -26,14 +26,14 @@ public class SetupActivity extends AppCompatActivity {
         });
 
 
-        LinearLayout PinKeyInjectionLinearLayout = findViewById(R.id.PinKeyInjectionLinearLayout);
-        PinKeyInjectionLinearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SetupActivity.this, PinKeyInjectionActivity.class); // Replace NewActivity with the name of your new activity class
-                startActivity(intent);
-            }
-        });
+//        LinearLayout PinKeyInjectionLinearLayout = findViewById(R.id.PinKeyInjectionLinearLayout);
+//        PinKeyInjectionLinearLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(SetupActivity.this, PinKeyInjectionActivity.class); // Replace NewActivity with the name of your new activity class
+//                startActivity(intent);
+//            }
+//        });
 
 
 
@@ -46,6 +46,32 @@ public class SetupActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//
+
+
+
+      LinearLayout TLEKeyDownloadLinearLayout = findViewById(R.id.TLEKeyDownloadLinearLayout);
+        TLEKeyDownloadLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetupActivity.this, TleKeyDownloadActivity.class); // Replace NewActivity with the name of your new activity class
+                startActivity(intent);
+            }
+        });
+
+
+        LinearLayout PinKeyInjectionLinearLayout = findViewById(R.id.PinKeyInjectionLinearLayout);
+        PinKeyInjectionLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetupActivity.this, PinKeyInjectionActivity.class); // Replace NewActivity with the name of your new activity class
+                startActivity(intent);
+            }
+        });
+
+
+
 
 
 

@@ -37,7 +37,8 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textFontWeight="600"
-            android:textSize="20dp" />
+            android:textSize="23dp"
+         />
 
 
         <ImageView
@@ -56,7 +57,7 @@
             android:layout_marginTop="2dp"
             android:textAlignment="center"
             android:textColor="#7F56D9"
-            android:textFontWeight="300"
+            android:textFontWeight="600"
             android:textSize="18dp" />
 
         <EditText
@@ -88,7 +89,8 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/radious_white_bg_orange_low_ra"
             android:elevation="12dp"
-            android:paddingTop="15dp"
+            android:paddingTop="8dp"
+            android:textSize="20dp"
             android:text="Log in"
             android:fontFamily="@font/montserrat"
             android:textFontWeight="900"
@@ -104,9 +106,10 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/radious_white_bg_orange_low_ra"
             android:backgroundTint="@color/white"
-            android:elevation="8dp"
             android:fontFamily="@font/montserrat"
-            android:paddingTop="10dp"
+            android:elevation="12dp"
+            android:textSize="20dp"
+            android:paddingTop="8dp"
             android:text="Exit"
             android:textAlignment="center"
             android:textColor="@color/black"

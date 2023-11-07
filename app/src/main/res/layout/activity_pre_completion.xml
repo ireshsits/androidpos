@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--3.1.1.1 sale 2-->
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -25,8 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Void"
-            android:textColor="@color/text_menu"
+            android:text="Pre Completion"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textFontWeight="800"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -49,10 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@drawable/radious_white_bg"
-
             android:elevation="6dp"
-
-            android:hint="Select a Merchant"
+            android:hint="Select a Host"
             app:hintTextColor="@color/black"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="16dp">
@@ -68,6 +64,36 @@
                 android:padding="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/merchant_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/radious_white_bg"
+
+            android:elevation="6dp"
+
+            android:hint="Select a Merchant"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            tools:layout_editor_absoluteX="16dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/merchant_auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:foreground="#0C000000"
+                android:inputType="none"
+
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
         <EditText
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -79,7 +105,7 @@
             android:hint="Enter Invoice No or PAN"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Detailsbox" />
+            app:layout_constraintTop_toBottomOf="@+id/merchant_textInputLayout" />
 
 
 
@@ -94,9 +120,10 @@
             android:padding="10dp"
             android:elevation="12dp"
             android:layout_margin="16dp"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <TextView
                 android:id="@+id/txtCardNumber"
@@ -106,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:text="No preauth transaction found!"
                 android:textColor="#D92D20"
-                android:textSize="12dp"
+                android:textSize="18dp"
                 android:textStyle="normal" />
 
 
@@ -141,8 +168,11 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/radious_white_bg_orange_low_ra"
                 android:elevation="12dp"
-                android:paddingTop="20dp"
-                android:text="Confirm"
+                android:paddingTop="16dp"
+                android:text="Pre Comp"
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -156,8 +186,11 @@
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
                 android:layout_marginBottom="22dp"
-                android:paddingTop="20dp"
+                android:paddingTop="16dp"
                 android:text="Cancel"
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 

@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--3.1.1.1 sale 2-->
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +6,7 @@
     android:layout_height="fill_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".dropdownmenu">
+    tools:context=".TleKeyDownloadActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,8 +22,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Select a Merchant "
+            android:text="TLE Key Download"
             android:textColor="@color/text_menu"
+            android:textFontWeight="800"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,21 +39,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/selectHost"
+            android:id="@+id/textInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/radious_white_bg"
             android:elevation="6dp"
-            android:hint="Select a Host"
+            android:hint="Select a Host "
             app:hintTextColor="@color/black"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="16dp">
+            app:layout_constraintTop_toTopOf="parent">
 
             <AutoCompleteTextView
-                android:id="@+id/auto_complete_txt_host"
+                android:id="@+id/autoCompleteTxtHost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -66,29 +67,54 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/textInputLayout"
             android:layout_margin="16dp"
             android:background="@drawable/radious_white_bg"
-            android:elevation="6dp"
-            android:hint="Select a Merchant"
-            android:id="@+id/selectmerchant"
-            app:hintTextColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@+id/selectHost"
-            tools:layout_editor_absoluteX="16dp">
+            android:elevation="12dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
-            <AutoCompleteTextView
-                android:id="@+id/auto_complete_txt_Mercant"
+            <EditText
+                android:id="@+id/CardPin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:foreground="#0C000000"
-                android:inputType="none"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="Enter TLE Card PIN"
+                android:background="@drawable/radious_white_bg"
+                android:elevation="4dp"
+                android:hint="Enter TLE Card PIN"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="#535353"
+                />
+            <TextView
+                android:id="@+id/btndownlord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radious_white_bg_orange_low_ra"
+                android:elevation="12dp"
+                android:paddingTop="20dp"
+                android:textFontWeight="800"
+                android:fontFamily="@font/montserrat"
+                android:text="Key Download"
+                android:layout_below="@+id/CardPin"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
-                android:padding="12dp" />
-        </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -100,22 +126,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:id="@+id/btnProceedAmountScreen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/radious_white_bg_orange_low_ra"
-                android:elevation="12dp"
-                android:paddingTop="16dp"
-                android:text="Proceed"
-                android:textSize="22dp"
-                android:fontFamily="@font/montserrat"
-                android:textFontWeight="900"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/btnCancelAmountScreen"
@@ -123,15 +133,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="22dp"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/radious_white_bg_orange_low_ra"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
                 android:paddingTop="16dp"
-                android:textSize="22dp"
+                android:text="Exit"
                 android:fontFamily="@font/montserrat"
                 android:textFontWeight="900"
-                android:text="Cancel"
+                android:textSize="22dp"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 

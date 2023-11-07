@@ -89,7 +89,7 @@
 
 
                             <LinearLayout
-                                android:id="@+id/HostLinearLayout"
+                                android:id="@+id/TLEKeyDownloadLinearLayout"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
@@ -107,39 +107,14 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:fontFamily="@font/montserrat_semibold"
-                                    android:text="Host Parameter"
+                                    android:text="TLE Key Download"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textSize="18dp" />
 
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:id="@+id/PinKeyInjectionLinearLayout"
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
-                                android:layout_margin="8dp"
-                                android:layout_weight="1"
-                                android:background="@drawable/radious_white_bg_orange_low_ra"
-                                android:elevation="4dp"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="5dp">
 
-                                <TextView
-                                    android:id="@+id/textView2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-
-                                    android:fontFamily="@font/montserrat_semibold"
-                                    android:text="PIN Key Injection"
-                                    android:textAlignment="center"
-                                    android:textColor="@color/white"
-                                    android:textSize="18dp" />
-
-                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -200,6 +175,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/PinKeyInjectionLinearLayout"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
@@ -208,12 +184,25 @@
                                 android:background="@drawable/radious_white_bg_orange_low_ra"
                                 android:elevation="4dp"
                                 android:gravity="center"
-                                android:visibility="invisible"
                                 android:orientation="vertical"
                                 android:padding="5dp">
 
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:text="PIN Key Injection"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
 
                             </LinearLayout>
+
+
+
 
                         </LinearLayout>
 

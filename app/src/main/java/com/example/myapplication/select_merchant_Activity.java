@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class select_merchant_Activity extends AppCompatActivity {
 
     String[] items = {"SAMPATH", "AMEX"};
-    AutoCompleteTextView autoCompleteTxt;
+    AutoCompleteTextView autoCompleteTxt_Mercant,autoCompleteTxt_Host;
     ArrayAdapter<String> adapterItems;
 
 
@@ -23,12 +23,20 @@ public class select_merchant_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.select_merchant);
 
-        autoCompleteTxt = findViewById(R.id.auto_complete_txt);
-
+        autoCompleteTxt_Mercant = findViewById(R.id.auto_complete_txt_Mercant);
+        autoCompleteTxt_Host = findViewById(R.id.auto_complete_txt_host);
         adapterItems = new ArrayAdapter<String>(this, R.layout.list_item, items);
-        autoCompleteTxt.setAdapter(adapterItems);
+        autoCompleteTxt_Mercant.setAdapter(adapterItems);
+        autoCompleteTxt_Host.setAdapter(adapterItems);
 
-        autoCompleteTxt.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        autoCompleteTxt_Mercant.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+                Toast.makeText(getApplicationContext(),   "Item: " + item, Toast.LENGTH_SHORT).show();
+            }
+        });
+        autoCompleteTxt_Host.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
@@ -37,15 +45,30 @@ public class select_merchant_Activity extends AppCompatActivity {
         });
 
 
-
         TextView btnProceedAmountScreen =findViewById(R.id.btnProceedAmountScreen);
         btnProceedAmountScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
                 Intent intent = new Intent(select_merchant_Activity.this, TapScreenActivity.class); // Replace NewActivity with the name of your new activity class
                 startActivity(intent);
             }
         });
+
+
+        TextView btnCancelAmountScreen =findViewById(R.id.btnCancelAmountScreen);
+        btnCancelAmountScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialogUtils.showCustomAlertDialog(select_merchant_Activity.this, "Do you really want to cancel selection?",MainActivity.class);
+
+            }
+        });
+
+
 
 
     }

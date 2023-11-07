@@ -62,18 +62,19 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnProceedAmountScreen"
+                android:id="@+id/btnProceedcomfirm"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/radious_white_bg_orange_low_ra"
                 android:elevation="12dp"
-                android:fontFamily="@font/montserrat_semibold"
                 android:text="Confirm"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textFontWeight="800" />
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnCancelAmountScreen"
@@ -86,14 +87,14 @@
                 android:background="@drawable/radious_white_bg"
                 android:backgroundTint="@color/white"
                 android:elevation="12dp"
-                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="22dp"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="900"
                 android:text="Cancel"
 
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="@color/black"
-
-                android:textFontWeight="800" />
+                android:textColor="@color/black" />
 
 
         </LinearLayout>

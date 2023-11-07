@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +34,17 @@ public class VoidActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Item: " + item, Toast.LENGTH_SHORT).show();
             }
         });
+
+        TextView btnCancelAmountScreen = findViewById(R.id.btnCancelAmountScreen);
+
+
+        btnCancelAmountScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                  AlertDialogUtils.showCustomAlertDialog(VoidActivity.this, "Are you sure you want to exit void operation?",MainActivity.class);
+            }
+        });
+
 
     }
 }
