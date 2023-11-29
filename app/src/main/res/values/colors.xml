@@ -4,28 +4,14 @@
     <color name="white">#FFFFFFFF</color>
 
 
-
-    <color name="bg_app">#F5F5F5</color>
-
-    <color name="darkGrey">#707070</color>
-    <color name="blue">#3434D5</color>
-    <color name="text_gray">#aeafaf</color>
-    <color name="text_blue">#0185d0</color>
     <color name="colorBlack">#020001</color>
-    <color name="bg">#E76203</color>
-    <color name="titlebg">#FF540A</color>
-    <color name="bg_appt">#F1510B</color>
     <color name="translucent">#50000011</color>
     <color name="text_menu">#A9B2B2 </color>
     <color name="colorPrimaryDark">#ed6506</color>
 
     <color name="input_num">#464646</color>
-    <color name="btn_num_normal">#ffffff</color>
-    <color name="btn_num_press">#2594E0</color>
 
 
-
-    <color name="allinpay_text_green">#55BAFF</color>
     <color name="primaryTheme">#FF540A</color>
 
 </resources>

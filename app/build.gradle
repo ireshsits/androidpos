@@ -49,5 +49,10 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.18'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.kenglxn.QRGen:android:2.6.0' //qr
+
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.18'
+
 
 }

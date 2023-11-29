@@ -25,5 +25,4 @@
         android:width="1dp"
         android:color="@color/translucent"
         />
-    <solid android:color="@color/white"/>
 </shape>

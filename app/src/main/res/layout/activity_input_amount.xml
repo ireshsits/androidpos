@@ -74,7 +74,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="#88F3F3F3"
         android:orientation="vertical"
         android:weightSum="4">
 
@@ -84,28 +84,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num1"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
                 android:scaleX="0.9"
                 android:text="1" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num2"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
                 android:scaleX="0.9"
                 android:text="2" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num3"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
                 android:scaleX="0.9"
                 android:text="3" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num4"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
@@ -121,21 +121,21 @@
             android:orientation="horizontal">
 
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num5"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
                 android:scaleX="0.9"
                 android:text="5" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num6"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
                 android:scaleX="0.9"
                 android:text="6" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num7"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
@@ -143,7 +143,7 @@
                 android:text="7" />
 
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num8"
                 style="@style/base_num_button"
                 android:fontFamily="@font/montserrat_semibold"
@@ -161,7 +161,7 @@
             android:orientation="horizontal">
 
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num9"
                 style="@style/base_num_button"
                 android:layout_marginRight="@dimen/divider_height"
@@ -169,7 +169,7 @@
                 android:scaleX="0.9"
                 android:text="9" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num0"
                 style="@style/base_num_button"
                 android:layout_marginRight="@dimen/divider_height"
@@ -177,7 +177,7 @@
                 android:scaleX="0.9"
                 android:text="0" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num00"
                 style="@style/base_num_button"
                 android:layout_marginRight="@dimen/divider_height"
@@ -185,13 +185,20 @@
                 android:scaleX="0.9"
                 android:text="00" />
 
-            <ImageView
+
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_num_clear"
                 style="@style/base_num_button"
-                android:scaleType="centerInside"
+                android:gravity="start|center_vertical"
+                android:drawableLeft="@drawable/delete_num"
+                android:text=""
                 android:scaleX="0.9"
-                android:src="@drawable/delete_num" />
-
+                android:paddingStart="23dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:drawablePadding="4dp" />
 
         </LinearLayout>
 

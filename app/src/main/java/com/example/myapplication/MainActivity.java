@@ -13,8 +13,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
+
+    public static final int REQUEST_START_AMOUNT_INPUT_QR = 3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
         LinearLayout saleLinearLayout = findViewById(R.id.saleLinearLayout);
@@ -107,8 +110,21 @@ public class MainActivity extends AppCompatActivity {
         qrLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, QRActivity.class); // Replace NewActivity with the name of your new activity class
-                startActivity(intent);
+
+
+
+//                if(applicationBase.checkForQRTran()) {
+//                    showToast("Pending QR Tran Available");
+//                }
+//                else {
+                    boolean merchenable = false;
+                    Intent amountInputQR = new Intent(MainActivity.this, InputAmount.class);
+                    amountInputQR.putExtra("merchenable",merchenable);
+                   startActivity(amountInputQR);
+                    //startActivityForResult(amountInputQR, REQUEST_START_AMOUNT_INPUT_QR);
+//                }
+
+
             }
         });
 
@@ -123,8 +139,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-
-
         LinearLayout preAuthLinearLayout = findViewById(R.id.preAuthLinearLayout);
         preAuthLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,6 +147,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
         LinearLayout reportLinearLayout = findViewById(R.id.reportLinearLayout);
         reportLinearLayout.setOnClickListener(new View.OnClickListener() {
@@ -166,8 +182,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
         LinearLayout preCompLinearLayout = findViewById(R.id.preCompLinearLayout);
         preCompLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -177,7 +191,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         LinearLayout clearReversalLinearLayout = findViewById(R.id.clearReversalLinearLayout);
         clearReversalLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -186,7 +199,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
         LinearLayout clearBatchLinearLayout = findViewById(R.id.clearBatchLinearLayout);
@@ -199,12 +211,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//
-//        AlertDialogUtils.showCustomAlertDialog(this, "New Text for dtitle2");
-
-
-
-
         LinearLayout forceReversalLinearLayou = findViewById(R.id.forceReversalLinearLayout);
         clearBatchLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -213,8 +219,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
         LinearLayout qrreportLinearLayout = findViewById(R.id.qrreportLinearLayout);
         qrreportLinearLayout.setOnClickListener(new View.OnClickListener() {
