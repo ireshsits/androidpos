@@ -71,11 +71,11 @@ public class QRReadyActivity extends AppCompatActivity {
                     Log.d("QRGenerationResponse", result);
                     Bitmap myBitmap = QRCode.from(result).withSize(550, 550).bitmap();
                     qrImageView.setImageBitmap(myBitmap);
-
+                    qrCoreLogic.validateCode();
 
                     //RUNCODE IN LOOP
                     startRepeatingTask();
-                    qrCoreLogic.validateCode();
+
 
 
                 } else {

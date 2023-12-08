@@ -95,7 +95,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".PreCompletionActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".PreAuthActivity"
@@ -133,12 +133,12 @@
             android:exported="false" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".QRReadyActivity"
             android:exported="false" />
 
 
         <activity
-            android:name=".QRReadyActivity"
+            android:name=".PreCompletionActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

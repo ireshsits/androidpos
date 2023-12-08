@@ -41,7 +41,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/selectHost"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             tools:layout_editor_absoluteX="16dp">
 
             <AutoCompleteTextView
-                android:id="@+id/auto_complete_txt"
+                android:id="@+id/auto_complete_txt_host"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -66,7 +66,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/merchant_textInputLayout"
+            android:id="@+id/selectmerchant"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,11 +77,11 @@
 
             android:hint="Select a Merchant"
             app:hintTextColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/selectHost"
             tools:layout_editor_absoluteX="16dp">
 
             <AutoCompleteTextView
-                android:id="@+id/merchant_auto_complete_txt"
+                android:id="@+id/auto_complete_txt_Mercant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -95,7 +95,7 @@
 
 
         <EditText
-            android:id="@+id/textView"
+            android:id="@+id/txtInvoiceNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -103,9 +103,11 @@
             android:background="@drawable/radious_white_bg"
             android:elevation="4dp"
             android:hint="Enter Invoice No or PAN"
+            android:maxLength="6"
+            android:imeOptions="actionDone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/merchant_textInputLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/selectmerchant" />
 
 
 
@@ -115,7 +117,7 @@
             android:id="@+id/Detailsbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textInputLayout"
+            android:layout_below="@id/selectHost"
             android:background="@drawable/radious_white_bg"
             android:padding="10dp"
             android:elevation="12dp"
@@ -123,20 +125,30 @@
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView">
+            app:layout_constraintTop_toBottomOf="@+id/txtInvoiceNumber">
 
             <TextView
-                android:id="@+id/txtCardNumber"
+                android:id="@+id/txtDesc"
                 android:textAlignment="center"
                 android:fontFamily="@font/montserrat_semibold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="No preauth transaction found!"
                 android:textColor="#D92D20"
-                android:textSize="18dp"
+                android:textSize="20dp"
                 android:textStyle="normal" />
 
-
+            <TextView
+                android:id="@+id/txtDesc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
