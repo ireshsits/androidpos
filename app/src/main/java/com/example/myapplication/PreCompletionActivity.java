@@ -43,8 +43,12 @@ public class PreCompletionActivity extends AppCompatActivity {
        btnConfirm = findViewById(R.id.btnConfirm);
 
 
-        btnConfirmEnabled();
+
         btnConfirmDisabled();
+      //  btnConfirmEnabled();
+
+
+
 
         Typeface tp = Typeface.createFromAsset(getAssets(),"digital_font.ttf");
         txtInvoice.setTypeface(tp);
