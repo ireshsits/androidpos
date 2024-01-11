@@ -11,11 +11,13 @@
     tools:openDrawer="end">
 
     <LinearLayout
+
         android:id="@+id/id_main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
+
             android:id="@+id/mainContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -94,12 +96,30 @@
 
 
                     <ImageView
+                        android:id="@+id/activityStatus"
                         android:layout_width="142dp"
                         android:layout_height="44dp"
                         android:layout_marginEnd="16dp"
                         android:src="@drawable/ready"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -117,9 +137,24 @@
                     android:id="@+id/scrollGrid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+
                     android:padding="0dp">
 
+
+
                     <LinearLayout
+
+                        android:id="@+id/basecon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+
+
+                      <LinearLayout
+                          android:id="@+id/mainmenu"
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -838,6 +873,53 @@
 
                         </LinearLayout>
                     </LinearLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/tapcardconstraintlayout"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="104dp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="Please Insert or Tap Card"
+
+                                android:textAlignment="center"
+                                android:textFontWeight="800"
+                                android:textSize="21dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/tapimg"
+                                android:layout_width="400dp"
+                                android:layout_height="300dp"
+                                android:layout_marginTop="60dp"
+                                android:paddingLeft="50dp"
+                                android:paddingRight="50dp"
+                                android:scaleType="fitStart"
+                                android:src="@drawable/taporinsert"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                 </LinearLayout>
+
+
+
+
+
+
                 </ScrollView>
             </LinearLayout>
         </LinearLayout>

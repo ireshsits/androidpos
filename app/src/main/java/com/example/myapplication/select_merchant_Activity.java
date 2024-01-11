@@ -54,6 +54,11 @@ public class select_merchant_Activity extends AppCompatActivity {
 
                 Intent intent = new Intent(select_merchant_Activity.this, TapScreenActivity.class); // Replace NewActivity with the name of your new activity class
                 startActivity(intent);
+
+
+
+
+
             }
         });
 

@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -36,8 +37,16 @@ public class SaleActivity extends AppCompatActivity {
         btnProceedAmountScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SaleActivity.this, select_merchant_Activity.class); // Replace NewActivity with the name of your new activity class
-                startActivity(intent);
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("amount", 100);
+                setResult(Activity.RESULT_OK, resultIntent);
+
+                // Finish the activity
+                finish();
+
+
+//                Intent intent = new Intent(SaleActivity.this, select_merchant_Activity.class); // Replace NewActivity with the name of your new activity class
+//                startActivity(intent);
             }
         });
 

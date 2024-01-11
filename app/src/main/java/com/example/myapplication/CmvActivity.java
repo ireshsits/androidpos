@@ -21,6 +21,8 @@ public class CmvActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(CmvActivity.this, CManualEntryActivity.class); // Replace NewActivity with the name of your new activity class
                 startActivity(intent);
+
+
             }
         });
     }
